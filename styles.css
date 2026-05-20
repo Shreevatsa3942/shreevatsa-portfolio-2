@@ -496,7 +496,9 @@ img {
 .company-logo {
     width: 56px;
     height: 56px;
-    background: var(--accent-light);
+    background: #ffffff;
+    border: 1px solid var(--border);
+    padding: 6px;
     border-radius: 12px;
     display: flex;
     align-items: center;
