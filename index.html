@@ -59,9 +59,26 @@
     <!-- Hero Section -->
     <section id="home" class="hero-section">
         <div class="hero-container">
-            <div class="hero-image-wrapper">
-                <div class="hero-image-ring">
-                    <img src="assets/profile.jpg" alt="Shreevatsa Balthillaya" class="hero-image" />
+            <div class="hero-left-column">
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-ring">
+                        <img src="assets/profile.jpg" alt="Shreevatsa Balthillaya" class="hero-image" />
+                    </div>
+                </div>
+                <!-- Simulated Developer Console Terminal -->
+                <div class="dev-terminal" data-aos="fade-up" data-aos-delay="200">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="terminal-btn close"></span>
+                            <span class="terminal-btn minimize"></span>
+                            <span class="terminal-btn maximize"></span>
+                        </div>
+                        <div class="terminal-title">developer@shreevatsa: ~</div>
+                        <div style="width: 38px;"></div>
+                    </div>
+                    <div class="terminal-body" id="terminalBody">
+                        <!-- Dynamic logs injected by JS -->
+                    </div>
                 </div>
             </div>
             <div class="hero-content">
@@ -73,7 +90,22 @@
                     Development building scalable systems. Skilled in optimising processes,
                     reducing overhead, and delivering high-quality solutions.
                 </p>
-                <div class="hero-buttons">
+                <!-- Career Metrics Stats Counter -->
+                <div class="stats-grid" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-card">
+                        <div class="stat-number" id="experienceCount" data-target="3.5">0</div>
+                        <div class="stat-label">Years Exp</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="costCount" data-target="40">0</div>
+                        <div class="stat-label">Cost Saved</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="perfCount" data-target="30">0</div>
+                        <div class="stat-label">Perf Boost</div>
+                    </div>
+                </div>
+                <div class="hero-buttons" style="margin-top: 2rem;">
                     <a href="#contact" class="btn btn-primary">Get in Touch</a>
                     <a href="#projects" class="btn btn-secondary">View Projects</a>
                 </div>
@@ -213,8 +245,17 @@
             <h2 class="section-title">Featured Projects</h2>
             <p class="section-subtitle">Showcase of my key projects demonstrating technical expertise and problem-solving abilities.</p>
             
+            <!-- Project Category Filter Tabs -->
+            <div class="filter-container" data-aos="fade-up" data-aos-delay="50">
+                <div class="filter-tabs">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="backend-ai">Backend &amp; AI</button>
+                    <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                </div>
+            </div>
+            
             <div class="projects-grid">
-                <div class="project-card" data-aos="fade-up" data-aos-delay="0">
+                <div class="project-card" data-category="backend-ai" data-aos="fade-up" data-aos-delay="0">
                     <div class="project-image">
                         <img src="assets/project-api-sync.png" alt="OpenAPI to Postman Sync" />
                     </div>
@@ -244,8 +285,8 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+ 
+                <div class="project-card" data-category="backend-ai" data-aos="fade-up" data-aos-delay="100">
                     <div class="project-image">
                         <img src="assets/project-whatsapp-ai.png" alt="WhatsApp AI Assistant" />
                     </div>
@@ -276,8 +317,8 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+ 
+                <div class="project-card" data-category="backend-ai" data-aos="fade-up" data-aos-delay="200">
                     <div class="project-image">
                         <img src="assets/project-nutrition.png" alt="Nutrition Management" />
                     </div>
@@ -307,8 +348,8 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+ 
+                <div class="project-card" data-category="fullstack" data-aos="fade-up" data-aos-delay="300">
                     <div class="project-image">
                         <img src="assets/project-elearning.png" alt="E-Learning Platform" />
                     </div>
@@ -338,8 +379,8 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+ 
+                <div class="project-card" data-category="fullstack" data-aos="fade-up" data-aos-delay="400">
                     <div class="project-image">
                         <img src="assets/project-portfolio.png" alt="Portfolio Website" />
                     </div>
